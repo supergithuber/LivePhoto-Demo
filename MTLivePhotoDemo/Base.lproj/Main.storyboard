@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fcU-74-UAb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Photo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSk-nP-tIY" customClass="PHLivePhotoView">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fSk-nP-tIY" secondAttribute="trailing" id="3tr-58-YWD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fSk-nP-tIY" secondAttribute="bottom" id="Gjh-2l-GgP"/>
+                            <constraint firstItem="fSk-nP-tIY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jq9-61-BMR"/>
+                            <constraint firstItem="fSk-nP-tIY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bSJ-eG-LjF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Live Photo" id="cmD-3Y-p1b">
+                        <barButtonItem key="leftBarButtonItem" title="iOS10" id="kaU-Nf-MXi">
+                            <connections>
+                                <segue destination="6Ok-EJ-8ay" kind="presentation" id="2zg-hN-21G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="DEm-oU-7cP">
+                            <connections>
+                                <action selector="takePhoto:" destination="BYZ-38-t0r" id="nbI-8O-mu3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="livePhotoView" destination="fSk-nP-tIY" id="ZMe-Di-nF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="389"/>
+        </scene>
+        <!--Live Photo Capture View Controller-->
+        <scene sceneID="wpa-Ar-P5X">
+            <objects>
+                <viewController id="6Ok-EJ-8ay" customClass="MTLivePhotoCaptureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uf2-nw-SYT"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUe-sc-fpb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wBB-9k-djr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kj1-vN-fbF" userLabel="Preview" customClass="MTLivePhotoPreview">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-Wy-3A5">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dq0-Hi-aYx"/>
+                                            <constraint firstAttribute="height" constant="30" id="osa-DB-wWy"/>
+                                        </constraints>
+                                        <state key="normal" title="swap"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="swapCamera:" destination="6Ok-EJ-8ay" eventType="touchUpInside" id="15L-Zy-XYh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="g6t-Wy-3A5" secondAttribute="bottom" constant="30" id="Q6y-a7-OYu"/>
+                                    <constraint firstAttribute="trailing" secondItem="g6t-Wy-3A5" secondAttribute="trailing" constant="30" id="RPh-j7-xYl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0l-eV-TOi">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXP-wq-HCt">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="2Bu-aD-wOc"/>
+                                            <constraint firstAttribute="width" constant="52" id="FEi-kb-spR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="BE9-RO-rAw"/>
+                                    <constraint firstItem="AXP-wq-HCt" firstAttribute="centerX" secondItem="K0l-eV-TOi" secondAttribute="centerX" id="Z62-Bw-NNk"/>
+                                    <constraint firstItem="AXP-wq-HCt" firstAttribute="centerY" secondItem="K0l-eV-TOi" secondAttribute="centerY" id="knZ-Su-des"/>
+                                    <constraint firstAttribute="height" constant="64" id="l00-fB-PNw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlx-af-5q4" userLabel="Still">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="DxL-u4-skD"/>
+                                    <constraint firstAttribute="width" constant="48" id="lRu-Cq-6II"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="6Ok-EJ-8ay" eventType="touchUpInside" id="8ux-dU-DCb"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdU-v6-rFN" userLabel="Capturing Live Photo Label">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="evP-cX-aPa"/>
+                                    <constraint firstAttribute="height" constant="25" id="mJf-l3-dwM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rlx-af-5q4" firstAttribute="centerX" secondItem="wBB-9k-djr" secondAttribute="centerX" id="9is-wr-uTj"/>
+                            <constraint firstItem="WUe-sc-fpb" firstAttribute="top" secondItem="rlx-af-5q4" secondAttribute="bottom" constant="42" id="GE7-e5-RjK"/>
+                            <constraint firstAttribute="trailing" secondItem="Kj1-vN-fbF" secondAttribute="trailing" id="W02-ku-gN0"/>
+                            <constraint firstItem="K0l-eV-TOi" firstAttribute="centerX" secondItem="rlx-af-5q4" secondAttribute="centerX" id="XZZ-GK-83x"/>
+                            <constraint firstItem="WUe-sc-fpb" firstAttribute="top" secondItem="Kj1-vN-fbF" secondAttribute="bottom" id="aAh-24-7cG"/>
+                            <constraint firstItem="sdU-v6-rFN" firstAttribute="centerX" secondItem="wBB-9k-djr" secondAttribute="centerX" id="m90-wm-HbX"/>
+                            <constraint firstItem="Kj1-vN-fbF" firstAttribute="top" secondItem="wBB-9k-djr" secondAttribute="top" id="qTb-rW-R8v"/>
+                            <constraint firstItem="K0l-eV-TOi" firstAttribute="centerY" secondItem="rlx-af-5q4" secondAttribute="centerY" id="sFd-nQ-FhX"/>
+                            <constraint firstItem="Kj1-vN-fbF" firstAttribute="leading" secondItem="wBB-9k-djr" secondAttribute="leading" id="w8F-Hm-uj4"/>
+                            <constraint firstItem="sdU-v6-rFN" firstAttribute="top" secondItem="uf2-nw-SYT" secondAttribute="bottom" constant="32" id="w8k-rT-CmR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="capturingLivePhotoLabel" destination="sdU-v6-rFN" id="GuR-jy-GOg"/>
+                        <outlet property="photoButton" destination="rlx-af-5q4" id="FQk-ko-ySL"/>
+                        <outlet property="previewView" destination="Kj1-vN-fbF" id="MfH-zl-MYs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRK-I7-wxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936.8" y="387.25637181409297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Mc-SC-MSu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcU-74-UAb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="53E-Kv-Zwi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tez-8B-eGX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9K-yG-siJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="389"/>
+        </scene>
+    </scenes>
+</document>

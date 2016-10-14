@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55F7EE5474D33E00351128BF /* libPods-MTLivePhotoDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7B2F4273916EE4FD74BA48 /* libPods-MTLivePhotoDemoTests.a */; };
+		640288E31DA89238009F4755 /* MTLivePhotoPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 640288E21DA89238009F4755 /* MTLivePhotoPreview.m */; };
+		640288E71DA89883009F4755 /* MTLivePhotoCaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 640288E61DA89883009F4755 /* MTLivePhotoCaptureSessionManager.m */; };
+		640288EA1DA89FDE009F4755 /* MTLivePhotoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 640288E91DA89FDE009F4755 /* MTLivePhotoCaptureViewController.m */; };
+		640288EE1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 640288ED1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.m */; };
+		64655D6B1D97709B00F35A0B /* MTLivePhotoVideoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 64655D6A1D97709B00F35A0B /* MTLivePhotoVideoTool.m */; };
+		648D0A671D88261F0093AA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0A661D88261F0093AA87 /* main.m */; };
+		648D0A6A1D88261F0093AA87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0A691D88261F0093AA87 /* AppDelegate.m */; };
+		648D0A6D1D88261F0093AA87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0A6C1D88261F0093AA87 /* ViewController.m */; };
+		648D0A701D88261F0093AA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648D0A6E1D88261F0093AA87 /* Main.storyboard */; };
+		648D0A721D88261F0093AA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648D0A711D88261F0093AA87 /* Assets.xcassets */; };
+		648D0A751D88261F0093AA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648D0A731D88261F0093AA87 /* LaunchScreen.storyboard */; };
+		648D0A801D88261F0093AA87 /* MTLivePhotoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0A7F1D88261F0093AA87 /* MTLivePhotoDemoTests.m */; };
+		648D0CA11D882E460093AA87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CA01D882E460093AA87 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		648D0CA31D882E530093AA87 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CA21D882E530093AA87 /* AVFoundation.framework */; };
+		648D0CA51D882E690093AA87 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CA41D882E690093AA87 /* OpenGLES.framework */; };
+		648D0CA71D882E7A0093AA87 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CA61D882E7A0093AA87 /* CoreVideo.framework */; };
+		648D0CA91D882E850093AA87 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CA81D882E850093AA87 /* CoreMedia.framework */; };
+		648D0CAB1D882E900093AA87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CAA1D882E900093AA87 /* CoreGraphics.framework */; };
+		648D0CAD1D882E9C0093AA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CAC1D882E9C0093AA87 /* UIKit.framework */; };
+		648D0CAF1D882EAE0093AA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0CAE1D882EAE0093AA87 /* Foundation.framework */; };
+		648D0D641D88FB2B0093AA87 /* MTJPEG.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0D631D88FB2B0093AA87 /* MTJPEG.m */; };
+		648D0D671D88FB410093AA87 /* MTMov.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0D661D88FB410093AA87 /* MTMov.m */; };
+		648D0D6B1D8949BD0093AA87 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648D0D6A1D8949BD0093AA87 /* PhotosUI.framework */; };
+		648D0ED71D8FAB880093AA87 /* MTCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0ED61D8FAB880093AA87 /* MTCameraView.m */; };
+		648D0EDA1D8FB0170093AA87 /* MTVideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0ED91D8FB0170093AA87 /* MTVideoPickerViewController.m */; };
+		648D0EF61D8FD5E90093AA87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 648D0EDC1D8FD5E90093AA87 /* Info.plist */; };
+		648D0EF71D8FD5E90093AA87 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EDE1D8FD5E90093AA87 /* MASCompositeConstraint.m */; };
+		648D0EF81D8FD5E90093AA87 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EE11D8FD5E90093AA87 /* MASConstraint.m */; };
+		648D0EF91D8FD5E90093AA87 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EE31D8FD5E90093AA87 /* MASConstraintMaker.m */; };
+		648D0EFA1D8FD5E90093AA87 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EE51D8FD5E90093AA87 /* MASLayoutConstraint.m */; };
+		648D0EFB1D8FD5E90093AA87 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EE91D8FD5E90093AA87 /* MASViewAttribute.m */; };
+		648D0EFC1D8FD5E90093AA87 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EEB1D8FD5E90093AA87 /* MASViewConstraint.m */; };
+		648D0EFD1D8FD5E90093AA87 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EED1D8FD5E90093AA87 /* NSArray+MASAdditions.m */; };
+		648D0EFE1D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EF01D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		648D0EFF1D8FD5E90093AA87 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EF21D8FD5E90093AA87 /* View+MASAdditions.m */; };
+		648D0F001D8FD5E90093AA87 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0EF51D8FD5E90093AA87 /* ViewController+MASAdditions.m */; };
+		648D0F041D925E7D0093AA87 /* MTLivePhotoCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0F031D925E7D0093AA87 /* MTLivePhotoCameraButton.m */; };
+		648D0F081D9510B40093AA87 /* MTImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D0F071D9510B40093AA87 /* MTImageTool.m */; };
+		64E45A611D9E5790007820E4 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E45A601D9E5790007820E4 /* libGPUImage.a */; };
+		64E45A621D9E57AF007820E4 /* libPods-MTLivePhotoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D430FB589AD821692FD960A /* libPods-MTLivePhotoDemo.a */; };
+		64E45A641D9E57B0007820E4 /* libPods-MTLivePhotoDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E45A631D9E57B0007820E4 /* libPods-MTLivePhotoDemoTests.a */; };
+		CCC986271DAB81E400310318 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC986261DAB81E400310318 /* CoreImage.framework */; };
+		CCC9862C1DABBDC800310318 /* UIViewController+MTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9862B1DABBDC800310318 /* UIViewController+MTAlert.m */; };
+		CCC9862F1DACCFCC00310318 /* MTLivePhotoFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC9862E1DACCFCC00310318 /* MTLivePhotoFilter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		648D0A7C1D88261F0093AA87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648D0A5A1D88261F0093AA87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 648D0A611D88261F0093AA87;
+			remoteInfo = MTLivePhotoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		146803AA5108BF283E59F41B /* Pods-MTLivePhotoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTLivePhotoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTLivePhotoDemo/Pods-MTLivePhotoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		16B99126A1249FA6C765127E /* Pods-MTLivePhotoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTLivePhotoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTLivePhotoDemo/Pods-MTLivePhotoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		564C7D01178689A8EDD982A4 /* Pods-MTLivePhotoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTLivePhotoDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTLivePhotoDemoTests/Pods-MTLivePhotoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		640288E11DA89238009F4755 /* MTLivePhotoPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoPreview.h; sourceTree = "<group>"; };
+		640288E21DA89238009F4755 /* MTLivePhotoPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoPreview.m; sourceTree = "<group>"; };
+		640288E51DA89883009F4755 /* MTLivePhotoCaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoCaptureSessionManager.h; sourceTree = "<group>"; };
+		640288E61DA89883009F4755 /* MTLivePhotoCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoCaptureSessionManager.m; sourceTree = "<group>"; };
+		640288E81DA89FDE009F4755 /* MTLivePhotoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoCaptureViewController.h; sourceTree = "<group>"; };
+		640288E91DA89FDE009F4755 /* MTLivePhotoCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoCaptureViewController.m; sourceTree = "<group>"; };
+		640288EC1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoCaptureDelegate.h; sourceTree = "<group>"; };
+		640288ED1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		64655D691D97709B00F35A0B /* MTLivePhotoVideoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoVideoTool.h; sourceTree = "<group>"; };
+		64655D6A1D97709B00F35A0B /* MTLivePhotoVideoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoVideoTool.m; sourceTree = "<group>"; };
+		648D0A621D88261F0093AA87 /* MTLivePhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTLivePhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		648D0A661D88261F0093AA87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		648D0A681D88261F0093AA87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		648D0A691D88261F0093AA87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		648D0A6B1D88261F0093AA87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		648D0A6C1D88261F0093AA87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		648D0A6F1D88261F0093AA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		648D0A711D88261F0093AA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		648D0A741D88261F0093AA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		648D0A761D88261F0093AA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648D0A7B1D88261F0093AA87 /* MTLivePhotoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTLivePhotoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		648D0A7F1D88261F0093AA87 /* MTLivePhotoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoDemoTests.m; sourceTree = "<group>"; };
+		648D0A811D88261F0093AA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648D0CA01D882E460093AA87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		648D0CA21D882E530093AA87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		648D0CA41D882E690093AA87 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		648D0CA61D882E7A0093AA87 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		648D0CA81D882E850093AA87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		648D0CAA1D882E900093AA87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		648D0CAC1D882E9C0093AA87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		648D0CAE1D882EAE0093AA87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		648D0D621D88FB2B0093AA87 /* MTJPEG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTJPEG.h; sourceTree = "<group>"; };
+		648D0D631D88FB2B0093AA87 /* MTJPEG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTJPEG.m; sourceTree = "<group>"; };
+		648D0D651D88FB410093AA87 /* MTMov.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMov.h; sourceTree = "<group>"; };
+		648D0D661D88FB410093AA87 /* MTMov.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMov.m; sourceTree = "<group>"; };
+		648D0D681D8949960093AA87 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		648D0D6A1D8949BD0093AA87 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		648D0ED51D8FAB880093AA87 /* MTCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCameraView.h; sourceTree = "<group>"; };
+		648D0ED61D8FAB880093AA87 /* MTCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCameraView.m; sourceTree = "<group>"; };
+		648D0ED81D8FB0170093AA87 /* MTVideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTVideoPickerViewController.h; sourceTree = "<group>"; };
+		648D0ED91D8FB0170093AA87 /* MTVideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTVideoPickerViewController.m; sourceTree = "<group>"; };
+		648D0EDC1D8FD5E90093AA87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648D0EDD1D8FD5E90093AA87 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		648D0EDE1D8FD5E90093AA87 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		648D0EDF1D8FD5E90093AA87 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		648D0EE01D8FD5E90093AA87 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		648D0EE11D8FD5E90093AA87 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		648D0EE21D8FD5E90093AA87 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		648D0EE31D8FD5E90093AA87 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		648D0EE41D8FD5E90093AA87 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		648D0EE51D8FD5E90093AA87 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		648D0EE61D8FD5E90093AA87 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		648D0EE71D8FD5E90093AA87 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		648D0EE81D8FD5E90093AA87 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		648D0EE91D8FD5E90093AA87 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		648D0EEA1D8FD5E90093AA87 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		648D0EEB1D8FD5E90093AA87 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		648D0EEC1D8FD5E90093AA87 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		648D0EED1D8FD5E90093AA87 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		648D0EEE1D8FD5E90093AA87 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		648D0EEF1D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		648D0EF01D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		648D0EF11D8FD5E90093AA87 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		648D0EF21D8FD5E90093AA87 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		648D0EF31D8FD5E90093AA87 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		648D0EF41D8FD5E90093AA87 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		648D0EF51D8FD5E90093AA87 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		648D0F021D925E7D0093AA87 /* MTLivePhotoCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoCameraButton.h; sourceTree = "<group>"; };
+		648D0F031D925E7D0093AA87 /* MTLivePhotoCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoCameraButton.m; sourceTree = "<group>"; };
+		648D0F061D9510B40093AA87 /* MTImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageTool.h; sourceTree = "<group>"; };
+		648D0F071D9510B40093AA87 /* MTImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageTool.m; sourceTree = "<group>"; };
+		64E45A601D9E5790007820E4 /* libGPUImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPUImage.a; path = "../../../Library/Developer/Xcode/DerivedData/MTLivePhotoDemo-eufkkkvdpgczwzhemmbekyxtjctl/Build/Products/Debug-iphoneos/GPUImage/libGPUImage.a"; sourceTree = "<group>"; };
+		64E45A631D9E57B0007820E4 /* libPods-MTLivePhotoDemoTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MTLivePhotoDemoTests.a"; path = "Pods/../build/Debug-iphoneos/libPods-MTLivePhotoDemoTests.a"; sourceTree = "<group>"; };
+		8D430FB589AD821692FD960A /* libPods-MTLivePhotoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTLivePhotoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7B2F4273916EE4FD74BA48 /* libPods-MTLivePhotoDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTLivePhotoDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC986261DAB81E400310318 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CCC9862A1DABBDC800310318 /* UIViewController+MTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MTAlert.h"; sourceTree = "<group>"; };
+		CCC9862B1DABBDC800310318 /* UIViewController+MTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTAlert.m"; sourceTree = "<group>"; };
+		CCC9862D1DACCFCC00310318 /* MTLivePhotoFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLivePhotoFilter.h; sourceTree = "<group>"; };
+		CCC9862E1DACCFCC00310318 /* MTLivePhotoFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLivePhotoFilter.m; sourceTree = "<group>"; };
+		F1813DB73122B4ED3AFADF82 /* Pods-MTLivePhotoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTLivePhotoDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTLivePhotoDemoTests/Pods-MTLivePhotoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		648D0A5F1D88261F0093AA87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC986271DAB81E400310318 /* CoreImage.framework in Frameworks */,
+				64E45A641D9E57B0007820E4 /* libPods-MTLivePhotoDemoTests.a in Frameworks */,
+				64E45A621D9E57AF007820E4 /* libPods-MTLivePhotoDemo.a in Frameworks */,
+				64E45A611D9E5790007820E4 /* libGPUImage.a in Frameworks */,
+				648D0D6B1D8949BD0093AA87 /* PhotosUI.framework in Frameworks */,
+				648D0CAF1D882EAE0093AA87 /* Foundation.framework in Frameworks */,
+				648D0CAD1D882E9C0093AA87 /* UIKit.framework in Frameworks */,
+				648D0CAB1D882E900093AA87 /* CoreGraphics.framework in Frameworks */,
+				648D0CA91D882E850093AA87 /* CoreMedia.framework in Frameworks */,
+				648D0CA71D882E7A0093AA87 /* CoreVideo.framework in Frameworks */,
+				648D0CA51D882E690093AA87 /* OpenGLES.framework in Frameworks */,
+				648D0CA31D882E530093AA87 /* AVFoundation.framework in Frameworks */,
+				648D0CA11D882E460093AA87 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648D0A781D88261F0093AA87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F7EE5474D33E00351128BF /* libPods-MTLivePhotoDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141C9C2927CD9A54CD42119B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				146803AA5108BF283E59F41B /* Pods-MTLivePhotoDemo.debug.xcconfig */,
+				16B99126A1249FA6C765127E /* Pods-MTLivePhotoDemo.release.xcconfig */,
+				F1813DB73122B4ED3AFADF82 /* Pods-MTLivePhotoDemoTests.debug.xcconfig */,
+				564C7D01178689A8EDD982A4 /* Pods-MTLivePhotoDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		640288E41DA89840009F4755 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				640288E51DA89883009F4755 /* MTLivePhotoCaptureSessionManager.h */,
+				640288E61DA89883009F4755 /* MTLivePhotoCaptureSessionManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		640288EB1DA8E808009F4755 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				640288EC1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.h */,
+				640288ED1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		648D0A591D88261F0093AA87 = {
+			isa = PBXGroup;
+			children = (
+				648D0A641D88261F0093AA87 /* MTLivePhotoDemo */,
+				648D0A7E1D88261F0093AA87 /* MTLivePhotoDemoTests */,
+				648D0A631D88261F0093AA87 /* Products */,
+				141C9C2927CD9A54CD42119B /* Pods */,
+				FD8B654274013BDEFF3934E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		648D0A631D88261F0093AA87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648D0A621D88261F0093AA87 /* MTLivePhotoDemo.app */,
+				648D0A7B1D88261F0093AA87 /* MTLivePhotoDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648D0A641D88261F0093AA87 /* MTLivePhotoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCC986321DACE68F00310318 /* iOS9.1LivephotoDemo */,
+				CCC986301DACE61700310318 /* iOS10LivephotoDemo */,
+				648D0A681D88261F0093AA87 /* AppDelegate.h */,
+				648D0A691D88261F0093AA87 /* AppDelegate.m */,
+				648D0A6B1D88261F0093AA87 /* ViewController.h */,
+				648D0A6C1D88261F0093AA87 /* ViewController.m */,
+				648D0A6E1D88261F0093AA87 /* Main.storyboard */,
+				648D0A711D88261F0093AA87 /* Assets.xcassets */,
+				648D0A731D88261F0093AA87 /* LaunchScreen.storyboard */,
+				648D0A761D88261F0093AA87 /* Info.plist */,
+				648D0A651D88261F0093AA87 /* Supporting Files */,
+			);
+			path = MTLivePhotoDemo;
+			sourceTree = "<group>";
+		};
+		648D0A651D88261F0093AA87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				648D0A661D88261F0093AA87 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		648D0A7E1D88261F0093AA87 /* MTLivePhotoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				648D0A7F1D88261F0093AA87 /* MTLivePhotoDemoTests.m */,
+				648D0A811D88261F0093AA87 /* Info.plist */,
+			);
+			path = MTLivePhotoDemoTests;
+			sourceTree = "<group>";
+		};
+		648D0D611D88FB050093AA87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				648D0D621D88FB2B0093AA87 /* MTJPEG.h */,
+				648D0D631D88FB2B0093AA87 /* MTJPEG.m */,
+				648D0D651D88FB410093AA87 /* MTMov.h */,
+				648D0D661D88FB410093AA87 /* MTMov.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		648D0ED41D8FAB020093AA87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				648D0ED81D8FB0170093AA87 /* MTVideoPickerViewController.h */,
+				648D0ED91D8FB0170093AA87 /* MTVideoPickerViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		648D0EDB1D8FD5E90093AA87 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				648D0EDC1D8FD5E90093AA87 /* Info.plist */,
+				648D0EDD1D8FD5E90093AA87 /* MASCompositeConstraint.h */,
+				648D0EDE1D8FD5E90093AA87 /* MASCompositeConstraint.m */,
+				648D0EDF1D8FD5E90093AA87 /* MASConstraint+Private.h */,
+				648D0EE01D8FD5E90093AA87 /* MASConstraint.h */,
+				648D0EE11D8FD5E90093AA87 /* MASConstraint.m */,
+				648D0EE21D8FD5E90093AA87 /* MASConstraintMaker.h */,
+				648D0EE31D8FD5E90093AA87 /* MASConstraintMaker.m */,
+				648D0EE41D8FD5E90093AA87 /* MASLayoutConstraint.h */,
+				648D0EE51D8FD5E90093AA87 /* MASLayoutConstraint.m */,
+				648D0EE61D8FD5E90093AA87 /* Masonry.h */,
+				648D0EE71D8FD5E90093AA87 /* MASUtilities.h */,
+				648D0EE81D8FD5E90093AA87 /* MASViewAttribute.h */,
+				648D0EE91D8FD5E90093AA87 /* MASViewAttribute.m */,
+				648D0EEA1D8FD5E90093AA87 /* MASViewConstraint.h */,
+				648D0EEB1D8FD5E90093AA87 /* MASViewConstraint.m */,
+				648D0EEC1D8FD5E90093AA87 /* NSArray+MASAdditions.h */,
+				648D0EED1D8FD5E90093AA87 /* NSArray+MASAdditions.m */,
+				648D0EEE1D8FD5E90093AA87 /* NSArray+MASShorthandAdditions.h */,
+				648D0EEF1D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				648D0EF01D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				648D0EF11D8FD5E90093AA87 /* View+MASAdditions.h */,
+				648D0EF21D8FD5E90093AA87 /* View+MASAdditions.m */,
+				648D0EF31D8FD5E90093AA87 /* View+MASShorthandAdditions.h */,
+				648D0EF41D8FD5E90093AA87 /* ViewController+MASAdditions.h */,
+				648D0EF51D8FD5E90093AA87 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		CCC986281DABB19400310318 /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+				648D0EDB1D8FD5E90093AA87 /* Masonry */,
+			);
+			name = Venders;
+			sourceTree = "<group>";
+		};
+		CCC986291DABBD9100310318 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9862A1DABBDC800310318 /* UIViewController+MTAlert.h */,
+				CCC9862B1DABBDC800310318 /* UIViewController+MTAlert.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		CCC986301DACE61700310318 /* iOS10LivephotoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCC986341DACE70C00310318 /* View */,
+				640288E41DA89840009F4755 /* Manager */,
+				CCC986311DACE67A00310318 /* Controller */,
+				640288EB1DA8E808009F4755 /* Delegate */,
+				CCC986291DABBD9100310318 /* Extension */,
+			);
+			name = iOS10LivephotoDemo;
+			sourceTree = "<group>";
+		};
+		CCC986311DACE67A00310318 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				640288E81DA89FDE009F4755 /* MTLivePhotoCaptureViewController.h */,
+				640288E91DA89FDE009F4755 /* MTLivePhotoCaptureViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CCC986321DACE68F00310318 /* iOS9.1LivephotoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCC986351DACE7E500310318 /* Utils */,
+				648D0D611D88FB050093AA87 /* Model */,
+				CCC986331DACE6E600310318 /* View */,
+				648D0ED41D8FAB020093AA87 /* Controller */,
+				CCC986281DABB19400310318 /* Venders */,
+			);
+			name = iOS9.1LivephotoDemo;
+			sourceTree = "<group>";
+		};
+		CCC986331DACE6E600310318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				648D0ED51D8FAB880093AA87 /* MTCameraView.h */,
+				648D0ED61D8FAB880093AA87 /* MTCameraView.m */,
+				648D0F021D925E7D0093AA87 /* MTLivePhotoCameraButton.h */,
+				648D0F031D925E7D0093AA87 /* MTLivePhotoCameraButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCC986341DACE70C00310318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				640288E11DA89238009F4755 /* MTLivePhotoPreview.h */,
+				640288E21DA89238009F4755 /* MTLivePhotoPreview.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCC986351DACE7E500310318 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9862D1DACCFCC00310318 /* MTLivePhotoFilter.h */,
+				CCC9862E1DACCFCC00310318 /* MTLivePhotoFilter.m */,
+				648D0F061D9510B40093AA87 /* MTImageTool.h */,
+				648D0F071D9510B40093AA87 /* MTImageTool.m */,
+				64655D691D97709B00F35A0B /* MTLivePhotoVideoTool.h */,
+				64655D6A1D97709B00F35A0B /* MTLivePhotoVideoTool.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FD8B654274013BDEFF3934E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				648D0D6A1D8949BD0093AA87 /* PhotosUI.framework */,
+				648D0D681D8949960093AA87 /* Photos.framework */,
+				648D0CAE1D882EAE0093AA87 /* Foundation.framework */,
+				648D0CAC1D882E9C0093AA87 /* UIKit.framework */,
+				648D0CAA1D882E900093AA87 /* CoreGraphics.framework */,
+				648D0CA81D882E850093AA87 /* CoreMedia.framework */,
+				648D0CA61D882E7A0093AA87 /* CoreVideo.framework */,
+				648D0CA41D882E690093AA87 /* OpenGLES.framework */,
+				648D0CA21D882E530093AA87 /* AVFoundation.framework */,
+				648D0CA01D882E460093AA87 /* QuartzCore.framework */,
+				CCC986261DAB81E400310318 /* CoreImage.framework */,
+				64E45A631D9E57B0007820E4 /* libPods-MTLivePhotoDemoTests.a */,
+				64E45A601D9E5790007820E4 /* libGPUImage.a */,
+				8D430FB589AD821692FD960A /* libPods-MTLivePhotoDemo.a */,
+				9D7B2F4273916EE4FD74BA48 /* libPods-MTLivePhotoDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		648D0A611D88261F0093AA87 /* MTLivePhotoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648D0A841D88261F0093AA87 /* Build configuration list for PBXNativeTarget "MTLivePhotoDemo" */;
+			buildPhases = (
+				574CCDDEC25A696BB4D4BAF4 /* [CP] Check Pods Manifest.lock */,
+				648D0A5E1D88261F0093AA87 /* Sources */,
+				648D0A5F1D88261F0093AA87 /* Frameworks */,
+				648D0A601D88261F0093AA87 /* Resources */,
+				1351A369CECB4BA4BD930B7B /* [CP] Embed Pods Frameworks */,
+				4D387F3236EDFB88FC77E348 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTLivePhotoDemo;
+			productName = MTLivePhotoDemo;
+			productReference = 648D0A621D88261F0093AA87 /* MTLivePhotoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		648D0A7A1D88261F0093AA87 /* MTLivePhotoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648D0A871D88261F0093AA87 /* Build configuration list for PBXNativeTarget "MTLivePhotoDemoTests" */;
+			buildPhases = (
+				2BA5769001A60432214719DD /* [CP] Check Pods Manifest.lock */,
+				648D0A771D88261F0093AA87 /* Sources */,
+				648D0A781D88261F0093AA87 /* Frameworks */,
+				648D0A791D88261F0093AA87 /* Resources */,
+				AF5911A9EDA46105A42121F5 /* [CP] Embed Pods Frameworks */,
+				4E20998C23187566F95473F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				648D0A7D1D88261F0093AA87 /* PBXTargetDependency */,
+			);
+			name = MTLivePhotoDemoTests;
+			productName = MTLivePhotoDemoTests;
+			productReference = 648D0A7B1D88261F0093AA87 /* MTLivePhotoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648D0A5A1D88261F0093AA87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = meitu;
+				TargetAttributes = {
+					648D0A611D88261F0093AA87 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KYFVDC483X;
+						ProvisioningStyle = Automatic;
+					};
+					648D0A7A1D88261F0093AA87 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 648D0A611D88261F0093AA87;
+					};
+				};
+			};
+			buildConfigurationList = 648D0A5D1D88261F0093AA87 /* Build configuration list for PBXProject "MTLivePhotoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 648D0A591D88261F0093AA87;
+			productRefGroup = 648D0A631D88261F0093AA87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648D0A611D88261F0093AA87 /* MTLivePhotoDemo */,
+				648D0A7A1D88261F0093AA87 /* MTLivePhotoDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		648D0A601D88261F0093AA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648D0EF61D8FD5E90093AA87 /* Info.plist in Resources */,
+				648D0A751D88261F0093AA87 /* LaunchScreen.storyboard in Resources */,
+				648D0A721D88261F0093AA87 /* Assets.xcassets in Resources */,
+				648D0A701D88261F0093AA87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648D0A791D88261F0093AA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1351A369CECB4BA4BD930B7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTLivePhotoDemo/Pods-MTLivePhotoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BA5769001A60432214719DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D387F3236EDFB88FC77E348 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTLivePhotoDemo/Pods-MTLivePhotoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E20998C23187566F95473F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTLivePhotoDemoTests/Pods-MTLivePhotoDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		574CCDDEC25A696BB4D4BAF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF5911A9EDA46105A42121F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTLivePhotoDemoTests/Pods-MTLivePhotoDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		648D0A5E1D88261F0093AA87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640288E71DA89883009F4755 /* MTLivePhotoCaptureSessionManager.m in Sources */,
+				640288EE1DA8E82F009F4755 /* MTLivePhotoCaptureDelegate.m in Sources */,
+				648D0EFD1D8FD5E90093AA87 /* NSArray+MASAdditions.m in Sources */,
+				648D0EFC1D8FD5E90093AA87 /* MASViewConstraint.m in Sources */,
+				648D0F041D925E7D0093AA87 /* MTLivePhotoCameraButton.m in Sources */,
+				648D0A6D1D88261F0093AA87 /* ViewController.m in Sources */,
+				648D0EF91D8FD5E90093AA87 /* MASConstraintMaker.m in Sources */,
+				64655D6B1D97709B00F35A0B /* MTLivePhotoVideoTool.m in Sources */,
+				648D0F081D9510B40093AA87 /* MTImageTool.m in Sources */,
+				648D0EFF1D8FD5E90093AA87 /* View+MASAdditions.m in Sources */,
+				648D0A6A1D88261F0093AA87 /* AppDelegate.m in Sources */,
+				648D0EF81D8FD5E90093AA87 /* MASConstraint.m in Sources */,
+				648D0ED71D8FAB880093AA87 /* MTCameraView.m in Sources */,
+				648D0EFB1D8FD5E90093AA87 /* MASViewAttribute.m in Sources */,
+				648D0EFE1D8FD5E90093AA87 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CCC9862F1DACCFCC00310318 /* MTLivePhotoFilter.m in Sources */,
+				640288EA1DA89FDE009F4755 /* MTLivePhotoCaptureViewController.m in Sources */,
+				648D0A671D88261F0093AA87 /* main.m in Sources */,
+				640288E31DA89238009F4755 /* MTLivePhotoPreview.m in Sources */,
+				648D0EF71D8FD5E90093AA87 /* MASCompositeConstraint.m in Sources */,
+				648D0EFA1D8FD5E90093AA87 /* MASLayoutConstraint.m in Sources */,
+				648D0D641D88FB2B0093AA87 /* MTJPEG.m in Sources */,
+				648D0EDA1D8FB0170093AA87 /* MTVideoPickerViewController.m in Sources */,
+				648D0F001D8FD5E90093AA87 /* ViewController+MASAdditions.m in Sources */,
+				CCC9862C1DABBDC800310318 /* UIViewController+MTAlert.m in Sources */,
+				648D0D671D88FB410093AA87 /* MTMov.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648D0A771D88261F0093AA87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648D0A801D88261F0093AA87 /* MTLivePhotoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		648D0A7D1D88261F0093AA87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 648D0A611D88261F0093AA87 /* MTLivePhotoDemo */;
+			targetProxy = 648D0A7C1D88261F0093AA87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		648D0A6E1D88261F0093AA87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648D0A6F1D88261F0093AA87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		648D0A731D88261F0093AA87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648D0A741D88261F0093AA87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		648D0A821D88261F0093AA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		648D0A831D88261F0093AA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		648D0A851D88261F0093AA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146803AA5108BF283E59F41B /* Pods-MTLivePhotoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KYFVDC483X;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				INFOPLIST_FILE = MTLivePhotoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)/**";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MTLivePhotoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		648D0A861D88261F0093AA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B99126A1249FA6C765127E /* Pods-MTLivePhotoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KYFVDC483X;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				INFOPLIST_FILE = MTLivePhotoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)/**";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MTLivePhotoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		648D0A881D88261F0093AA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1813DB73122B4ED3AFADF82 /* Pods-MTLivePhotoDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MTLivePhotoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MTLivePhotoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTLivePhotoDemo.app/MTLivePhotoDemo";
+			};
+			name = Debug;
+		};
+		648D0A891D88261F0093AA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564C7D01178689A8EDD982A4 /* Pods-MTLivePhotoDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MTLivePhotoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MTLivePhotoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTLivePhotoDemo.app/MTLivePhotoDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		648D0A5D1D88261F0093AA87 /* Build configuration list for PBXProject "MTLivePhotoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648D0A821D88261F0093AA87 /* Debug */,
+				648D0A831D88261F0093AA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648D0A841D88261F0093AA87 /* Build configuration list for PBXNativeTarget "MTLivePhotoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648D0A851D88261F0093AA87 /* Debug */,
+				648D0A861D88261F0093AA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648D0A871D88261F0093AA87 /* Build configuration list for PBXNativeTarget "MTLivePhotoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648D0A881D88261F0093AA87 /* Debug */,
+				648D0A891D88261F0093AA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 648D0A5A1D88261F0093AA87 /* Project object */;
+}
