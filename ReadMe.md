@@ -57,6 +57,7 @@
 1. 将项目中的iOS10LivephotoDemo拖到你的项目中，拍摄界面是MTLivePhotoCaptureViewController是拍摄的界面。
 2. 如果你已经有了自己的拍照界面controller，可以参考MTLivePhotoCaptureViewController的使用，在自己的controller中创建MTLivePhotoPreview，它的AVCaptureSession属性用于呈现拍摄的实时界面。
 3. 开启步骤：
+
 		* 在viewdidload中调用[MTLivePhotoCaptureSessionManager sharedManager]开启会话
 		* 把会话的session的赋值给MTLivePhotoPreview的session用于展现实时拍摄画面
 		* 通过MTLivePhotoCaptureSessionManager的authorize方法获得相机访问授权
