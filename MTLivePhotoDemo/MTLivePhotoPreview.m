@@ -2,8 +2,8 @@
 //  MTLivePhotoPreview.m
 //  MTLivePhotoDemo
 //
-//  Created by meitu on 16/10/8.
-//  Copyright © 2016年 meitu. All rights reserved.
+//  Created by wuxi on 16/10/8.
+//  Copyright © 2016年 wuxi. All rights reserved.
 //
 
 #import "MTLivePhotoPreview.h"

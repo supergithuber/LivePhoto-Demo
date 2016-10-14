@@ -2,8 +2,8 @@
 //  MTLivePhotoCameraButton.m
 //  MTLivePhotoDemo
 //
-//  Created by meitu on 16/9/21.
-//  Copyright © 2016年 meitu. All rights reserved.
+//  Created by wuxi on 16/9/21.
+//  Copyright © 2016年 wuxi. All rights reserved.
 //
 
 #import "MTLivePhotoCameraButton.h"

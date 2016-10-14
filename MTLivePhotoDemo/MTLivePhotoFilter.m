@@ -3,7 +3,7 @@
 //  MTLivePhotoDemo
 //
 //  Created by wuxi on 16/10/11.
-//  Copyright © 2016年 meitu. All rights reserved.
+//  Copyright © 2016年 wuxi. All rights reserved.
 //
 
 #import "MTLivePhotoFilter.h"

@@ -3,7 +3,7 @@
 //  MTLivePhotoDemo
 //
 //  Created by wuxi on 16/9/19.
-//  Copyright © 2016年 meitu. All rights reserved.
+//  Copyright © 2016年 wuxi. All rights reserved.
 //
 
 #import "MTCameraView.h"
