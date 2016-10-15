@@ -1,8 +1,9 @@
 # MTLivePhotoDemo Documentation
 
-## brief introduction
-1. 其中一个用于在iOS9.1以及以上设备拍摄livephoto，无设备限制。
-2. 另一个用于在iOS10以上拍摄livephoto，调用系统的接口，限制机型为iphone6s以及更晚发布的手机。
+## Brief introduction
+1. First one is for the iOS9.1 and the above equipment to capture livephoto, no equipment restrictions.
+2. Another one use to capture livephoto above iOS10, call the system interface, limiting models for iphone6s and later released iphone
+.
 
 ## Detailed introduction
 1. 无设备限制的采用GPUImage（0.1.7）拍摄并添加滤镜，有添加实时滤镜、添加后期滤镜、预览界面长按预览、保存到相册功能
